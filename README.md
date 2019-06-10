@@ -6,6 +6,7 @@
 <img src = "Pivot.JPG"> 
 
 <h3>Answer</h3>
+
       SELECT Doctor, Professor, Singer, Actor  
       FROM 
       (SELECT name, occupation, ROW_NUMBER() OVER (PARTITION BY occupation ORDER BY name)as rn FROM OCCUPATIONS )
@@ -63,6 +64,7 @@ The first SELECT Query uses the aggregated values from the results of the second
 <img src = "join.JPG"> 
 
 <h3> Answer</h3>
+
       SELECT 
       CASE 
           WHEN grade < 8 THEN 'NULL'
@@ -87,6 +89,7 @@ This Query is divided up into two parts
 <img src ="join_with_having.JPG"> 
 
 <h3>Answer</h3>
+
       SELECT HACKERS.hacker_id, HACKERS.name 
       FROM HACKERS 
       INNER JOIN SUBMISSIONS ON HACKERS.hacker_id = SUBMISSIONS.hacker_id
