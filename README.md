@@ -2,8 +2,10 @@
 
 <h2>PIVOT </h2>
 
+<h3>Question</h3>
 <img src = "Pivot.JPG"> 
 
+<h3>Answer</h3>
       SELECT Doctor, Professor, Singer, Actor  
       FROM 
       (SELECT name, occupation, ROW_NUMBER() OVER (PARTITION BY occupation ORDER BY name)as rn FROM OCCUPATIONS )
