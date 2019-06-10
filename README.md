@@ -13,7 +13,7 @@
       ( MAX(name) FOR occupation  IN ('Doctor' as Doctor ,'Professor' as Professor ,'Singer' as Singer ,'Actor' as Actor)) 
       ORDER BY rn ;
 
-
+<h3>Breakdown</h3>
 This SQL Select Query is divided into three sections.
 
   1) The first SELECT Query selects the columns from the new pivot table that was created
